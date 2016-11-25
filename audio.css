@@ -1,0 +1,199 @@
+/*Audio CSS*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body,html{
+	font-family:"微软雅黑";
+	background-color:#F1FDF3
+}
+.audio{
+	max-width:400px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	background-color:#E5F4E7;
+	color:#99CDA9;
+	padding:30px;
+	border-radius:5px;
+	box-shadow:3px 3px 3px #ddd;
+}
+
+.audio-info{
+	text-align:center;
+	padding:1rem 0;
+}
+.audio-info h1{
+	font-weight:normal;
+	font-size:1.75rem;
+	margin-bottom:.5rem;
+}
+.audio-control{
+	width:100%;
+	line-height:55px;
+	text-align:center;
+}
+.audio-control span{
+	cursor:pointer;
+	margin-left:7px;
+	margin-right:7px;
+	font-size:1.35rem;
+}
+.audio-control span#volume{
+	margin-left:-3px;
+	width:60px;
+}
+
+
+
+/*input 滑块样式*/
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  display:inline-block;
+  width:15%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  width: 13px;
+  height:13px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5px;
+  box-shadow:1px 1px 3px #ccc;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow:1px 1px 3px #ccc;
+  border: 1px solid #000000;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow:1px 1px 3px #ccc;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 1.3px;
+  margin-top:-11px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 1.3px;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #ccc;
+  border-color: transparent;
+  border-width: 0;
+  color: transparent;
+}
+
+
+.progress{
+	width:100%;
+	height:5px;
+	background-color:#F1FDF3;
+	border-radius:5px;
+	margin:1rem auto;
+	position:relative;
+	cursor:pointer;
+}
+.current{
+	width:0;
+	background-color:#99CDA9;
+	left:0;
+	top:0;
+	position:absolute;
+	height:5px;
+	border-radius:5px;
+}
+
+.list{
+	width:100%;
+	padding:1.5rem 0 1rem 0;
+}
+
+.list li{
+	line-height:35px;
+	border-bottom:1px dashed #D1E9D2;
+	width:100%;
+	list-style:none;
+	padding:3px 5px;
+	cursor:pointer;
+	transition:padding .35s;
+}
+.list li:first-child{
+	border-top:1px dashed #D1E9D2;
+}
+.list li:hover{
+	padding-left:1rem;
+}
+.list li.current-audio:before{
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.35rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	content:"\f01d";
+	margin-right:15px;
+}
+.footer{
+	font-size:.9rem;
+	color:#D1E9D2;
+	line-height:1.5rem;
+	text-align:center;
+}
+.footer a{
+	color:#D1E9D2;
+	text-decoration:none;
+}
+
+
+

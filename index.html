@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Audio Player</title>
+		<link rel="stylesheet" href="https://erl.im/wp-content/themes/dysis/css/font-awesome.min.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="audio.css" type="text/css" media="screen">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="https://erl.im/wp-content/themes/dysis/js/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="audio">
+				<div class="audio-info">
+					<h1 id="name"></h1>
+					<p><span id="musician"></span></p>
+				</div>
+				<div class="audio-control">
+					<span id="backward"><i class="fa fa-backward"></i></span>
+					<span id="play"><i class="fa fa-play"></i></span>
+					<span id="forward"><i class="fa fa-forward"></i></span>
+					<span id="muted"><i class="fa fa-volume-up" id="muted"></i>
+					</span>
+					<span id="volume">
+					<input type="range" name="volume" min="0" max="10" value="10"/>
+					</span>
+				</div>
+				<div class="progress">
+					<div class="current"></div>
+				</div>
+				<div class="list">
+					
+				</div>
+				<div class="footer">© <a href="http://erl.im/">Erl</a></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="audioplayer.js"></script>
+
+	</body>
+</html>
